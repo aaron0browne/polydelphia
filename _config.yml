@@ -5,7 +5,7 @@ description: >
   Polydelphia is electing a new Steering Committee! All the
   candidates are displayed below. Happy Voting!
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://polydelphia.org" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Layout settings
 header_type: default  # values [ drawer, default ]
@@ -21,7 +21,7 @@ exclude:
 collections:
   candidates:
     output: true
-    permalink: /candidates/:name.:output_ext
+    permalink: /candidates/:name:output_ext
   test_candidates:
     output: true
-    permalink: /test/candidates/:name.:output_ext
+    permalink: /test/candidates/:name:output_ext
