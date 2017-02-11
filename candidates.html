@@ -1,0 +1,30 @@
+---
+layout: default
+title: Candidates
+permalink: /
+inheader: false
+published: false
+---
+<div class="page-content">
+  <div class="mdl-grid">
+  {% for candidate in site.candidates %}
+
+  <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
+    <a style="text-decoration: none;" href="{{ candidate.url | prepend: site.baseurl }}">
+      <div class="mdl-card__title" {% if candidate.image %} style="background: url('{{ candidate.image }}') center/cover;" {% endif %}>
+        <h2 class="mdl-card__title-text">{{ candidate.title }}</h2>
+      </div>
+    </a>
+    <div class="mdl-card__supporting-text">
+      <p>{{ candidate.excerpt }}</p>
+    </div>
+    <div class="mdl-card__actions mdl-card--border">
+      <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{ candidate.url | prepend: site.baseurl }}">
+        Read More
+      </a>
+    </div>
+  </div>
+
+  {% endfor %}
+  </div>
+</div>
