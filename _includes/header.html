@@ -1,11 +1,14 @@
   <header class="mdl-layout__header">
 
-    <div class="mdl-layout__header-row" style="padding-left: 40px !important;">
+    <div class="mdl-layout__header-row">
       <!-- Title -->
       <script>/*
-      <span class="mdl-layout-title">{{ site.title }}</span> -->
+      style="padding-left: 40px !important;"
+      <span class="mdl-layout-title">{{ site.title }}</span>
       */</script>
-      <a class="mdl-layout-title mdl-navigation__link" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      <span class="mdl-layout-title">
+        <a class="mdl-layout-title mdl-navigation__link" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      </span>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
 

@@ -79,3 +79,10 @@
   }
 
 }
+
+// Remove title below 500px
+.mdl-layout-title {
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
+}
