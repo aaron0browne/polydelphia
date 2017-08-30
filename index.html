@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Polydelphia Test Election
+title: Polydelphia Election
 inheader: false
 published: true
 permalink: /
@@ -8,7 +8,7 @@ permalink: /
 ---
 <div class="page-content">
   <div class="mdl-grid">
-  {% for candidate in site.test_candidates %}
+  {% for candidate in site.candidates %}
 
   <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop mdl-cell--4-col-tablet  mdl-cell--12-col-phone">
     <a style="text-decoration: none;" href="{{ candidate.url | prepend: site.baseurl }}">
