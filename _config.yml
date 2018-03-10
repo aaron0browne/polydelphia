@@ -2,8 +2,8 @@
 title: Polydelphia Election
 email: polydelphia@gmail.com
 description: >
-  Polydelphia is electing a new Steering Committee! All the
-  candidates are displayed below. Happy Voting!
+  Polydelphia is electing new Steering Committee members!
+  All the candidates are displayed below. Happy Voting!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://polydelphia.org" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -22,6 +22,3 @@ collections:
   candidates:
     output: true
     permalink: /candidates/:name:output_ext
-  test_candidates:
-    output: true
-    permalink: /test/candidates/:name:output_ext
