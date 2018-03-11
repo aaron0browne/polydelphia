@@ -13,4 +13,4 @@
       - name: "Install Caddy"
         shell: "curl https://getcaddy.com | bash -s personal hook.service"
       - name: "Install Caddy service"
-        command: "caddy -service install -conf /polydelphia/Caddyfile"
+        command: "caddy -service install -conf /polydelphia/_site/Caddyfile"
