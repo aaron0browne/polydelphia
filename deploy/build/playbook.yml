@@ -1,0 +1,16 @@
+---
+  - hosts: "all"
+    name: "Install Polydelphia site server"
+    become: true
+    tasks:
+      - name: "Update all packages to the latest version"
+        apt:
+          upgrade: "dist"
+      - name: "Copy _site directory"
+        copy:
+          src: "../../_site"
+          dest: "/polydelphia"
+      - name: "Install Caddy"
+        shell: "curl https://getcaddy.com | bash -s personal hook.service"
+      - name: "Install Caddy service"
+        command: "caddy -service install -conf /polydelphia/Caddyfile"
