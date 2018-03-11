@@ -1,4 +1,4 @@
-http://polydelphia.org
+polydelphia.org
 
-root /src/polydelphia/_site
-jekyll
+basicauth / poly election2018
+root /polydelphia/_site
