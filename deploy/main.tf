@@ -56,7 +56,7 @@ resource "google_compute_instance" "polydelphia-web" {
     environment = "prod"
   }
 
-  tags = ["polydelphia", "web"]
+  tags = ["polydelphia-web"]
 }
 
 resource "google_compute_firewall" "polydelphia-web" {
@@ -69,7 +69,7 @@ resource "google_compute_firewall" "polydelphia-web" {
     ports    = ["80", "443"]
   }
 
-  target_tags = ["polydelphia", "web"]
+  target_tags = ["polydelphia-web"]
 }
 
 output "external-ip" {
