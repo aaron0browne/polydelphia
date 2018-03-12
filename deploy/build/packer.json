@@ -9,7 +9,7 @@
     "zone": "us-east4-b",
     "source_image_family": "debian-9",
     "source_image_project_id": "debian-cloud",
-    "image_name": "polydelphia-web-{{user `tag`}}-{{isotime \"2006-01-02-1504\"}}",
+    "image_name": "polydelphia-web-{{user `tag` | clean_image_name}}-{{isotime \"2006-01-02-1504\"}}",
     "image_family": "polydelphia-web",
     "image_description": "A polydelphia election site web server.",
     "ssh_username": "packer"
